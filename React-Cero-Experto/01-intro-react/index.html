@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+</body>
+
+    <!-- Cargar o importar Rect -->
+    <!-- 1.Libreria propia de react
+         2.Se encarga del navegador web
+         3.Conversión código moderno a código soportado por cualquier navegador web -->
+         <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>ReactApp</title>
 </head>
 <body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        const divRoot = document.querySelector('#root');
+        const nombre = "Manuela";
+        const h1Tag = <h1> Hola mundo, soy {nombre} </h1>;
+
+        // Reenderizar h1Tag en divRoot
+        ReactDOM.render(h1Tag, divRoot);
+
+    </script>
     
-</body>
 </html>
