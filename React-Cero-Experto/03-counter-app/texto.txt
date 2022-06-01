@@ -1,0 +1,2 @@
+-¿Qué es un componentes? es una pequeña pieza de código que realiza un trabajo en especifico
+-Existen componentes de clases o funciones
