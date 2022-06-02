@@ -1,7 +1,7 @@
 const express = require('express');
 const userSchema = require("../models/user");
 
-const router = express.Router(); //enrutador (objeto)
+const router = express.Router(); //enrutador, retorna un objeto
 
 //ruta create user
 router.post("/create_users", (request, response)=>{
